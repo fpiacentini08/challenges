@@ -1,6 +1,10 @@
 package com.fpiacentini08.challenges.subjectsincommon;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.PriorityQueue;
+import java.util.Set;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class SubjectsInCommon {
