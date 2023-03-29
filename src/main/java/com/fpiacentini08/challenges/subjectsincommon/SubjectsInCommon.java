@@ -28,7 +28,7 @@ public class SubjectsInCommon {
                 var studentToMatchSubjects = subjectsPerStudentMap.get(studentToMatch);
                 var secondStudentSubjects = subjectsPerStudentMap.get(secondStudent);
                 var matchingSubjects = studentToMatchSubjects.stream().filter(secondStudentSubjects::contains).collect(Collectors.toList());
-                response.computeIfAbsent(studentsSet, key -> new HashSet<>(matchingSubjects));
+                response.putIfAbsent(studentsSet, new HashSet<>(matchingSubjects));
             }
             studentToMatch = studentsQueue.poll();
         }
