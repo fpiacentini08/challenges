@@ -1,4 +1,4 @@
-package com.fpiacentini08.challenges.subjectsincommon;
+package com.fpiacentini08.challenges.challenge001;
 
 import java.util.HashMap;
 import java.util.HashSet;
