@@ -15,7 +15,7 @@ public class SubjectsInCommon {
             var student = listOfStudentsAndSubjects[i][0];
             var subject = listOfStudentsAndSubjects[i][1];
             subjectsPerStudentMap.computeIfPresent(student, (key, val) -> addToSetAndReturn(val, subject));
-            subjectsPerStudentMap.computeIfAbsent(student, key -> Set.of(subject));
+            subjectsPerStudentMap.putIfAbsent(student, Set.of(subject));
         }
         var response = new HashMap<Set<String>, Set<String>>();
         var studentsQueue = new PriorityQueue<>(subjectsPerStudentMap.keySet());
