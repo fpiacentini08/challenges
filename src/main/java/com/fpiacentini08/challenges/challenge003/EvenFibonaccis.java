@@ -15,7 +15,6 @@ public class EvenFibonaccis {
                 index++;
             }
         }
-        System.out.println(Arrays.toString(input));
         return input;
     }
 }
