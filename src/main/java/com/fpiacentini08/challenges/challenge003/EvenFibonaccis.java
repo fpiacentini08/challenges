@@ -1,6 +1,5 @@
 package com.fpiacentini08.challenges.challenge003;
 
-import java.util.Arrays;
 
 public class EvenFibonaccis {
 
