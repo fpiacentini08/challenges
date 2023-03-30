@@ -13,6 +13,7 @@ Map<String, Integer> responseMap = {
 {"is", 5},
 {"a", 3},
 {"test", 3},
-{"string", 1}
+{"string", 1},
+{"it", 2}
 }
 ```
