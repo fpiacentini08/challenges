@@ -18,18 +18,17 @@ public class MergeSortedLinkedLists {
 	}
 
 	private static LinkedList<Integer> insertInLinkedListInOrder(LinkedList<Integer> linkedList, LinkedList<Integer> responseLinkedList) {
-        int insertingIndex = 0;
-        for(var number : linkedList){
-            while(insertingIndex < responseLinkedList.size() && responseLinkedList.get(insertingIndex) < number){
-                insertingIndex++;
-            }
-            if(insertingIndex < responseLinkedList.size()){
-                responseLinkedList.add(insertingIndex, number);
-            }
-            else{
-                responseLinkedList.addLast(number);
-            }
-        }
-        return responseLinkedList;
+		int insertingIndex = 0;
+		for (var number : linkedList) {
+			while (insertingIndex < responseLinkedList.size() && responseLinkedList.get(insertingIndex) < number) {
+				insertingIndex++;
+			}
+			if (insertingIndex < responseLinkedList.size()) {
+				responseLinkedList.add(insertingIndex, number);
+			} else {
+				responseLinkedList.addLast(number);
+			}
+		}
+		return responseLinkedList;
 	}
 }
